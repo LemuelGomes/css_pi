@@ -1,0 +1,149 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.topo {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 175px;
+    background-color: rgb(0, 74, 141);
+
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_site {    
+    height: 60%;
+}
+
+#menu-destaque {
+    background-color: rgb(143, 79, 0);
+}
+
+.menu {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(247, 148, 30);
+}
+
+.menu-item {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: calc(100% - 5px);
+    color: white;
+    text-align: center;
+
+    padding-top: 5px;
+
+    transition: 0.15s;
+}
+
+.menu-item:hover {
+    height: 100%;
+    padding-top: 12px;
+    background-color: rgb(219, 126, 12);
+}
+
+.submenu {
+    position: absolute;
+    top: 46px;
+    width: 180px;
+    color: black;
+
+    display: none;
+    transition: 0.25s;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu-item {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 35px;
+
+    background-color: rgb(221, 221, 221);
+
+    transition: 0.25s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submenu-item:hover {
+    color: white;
+    background-color: rgb(0, 74, 141);
+    margin-left: 5px;
+}
+
+.maxmenu-servicos {
+    position: absolute;
+    top: 40px;
+    left: -300px;
+    width: 600%;
+    height: 200px;
+    background-color: rgb(202, 202, 202);
+
+    display: none;
+}
+
+#i-maxmenu-servicos:hover .maxmenu-servicos {
+    display: block;
+}
+
+.conteudo {
+    position: relative;
+    float: left;
+    width: 80%;
+    height: 1200px;
+    background-color: rgb(241, 241, 241);
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 150px;
+    background-color: brown;
+}
+
+@media screen and (max-width: 480px) {
+    .topo {
+        height: 100px;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .menu {
+        height: 30px;
+    }
+
+    .conteudo {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
