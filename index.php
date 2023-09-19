@@ -51,9 +51,20 @@
           
           <?php
           
+          $active = '';
+
             for($i = 1; $i <= 3; $i++)
-            {
-              echo '<div class="carousel-item active">';
+            {           
+              if($i == 1)
+              {
+                $active = 'active';
+              }
+              else
+              {
+                $active = '';
+              }
+              
+              echo '<div class="carousel-item ' . $active . '">';
               echo '<img src="images/banner-game-0' . $i . '.png" class="d-block w-100" alt="...">';
               echo '</div>';
             }
